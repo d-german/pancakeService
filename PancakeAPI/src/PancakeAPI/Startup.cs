@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace PancakeAPI
 {
@@ -28,7 +29,20 @@ namespace PancakeAPI
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddMvc();
+            // Add framework services.
+            var mvc = services.AddMvc(config =>
+            {
+                config.RespectBrowserAcceptHeader = true;
+                config.InputFormatters.Add(new XmlSerializerInputFormatter());
+                config.OutputFormatters.Add(new XmlSerializerOutputFormatter());
+            });
+
+/*
+            mvc.AddMvcOptions(options =>
+            {
+                options.InputFormatters.Remove(new JsonInputFormatter());
+                options.OutputFormatters.Remove(new JsonOutputFormatter());
+            });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
