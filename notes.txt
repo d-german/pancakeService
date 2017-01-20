@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/36682240/return-application-xml-instead-of-text-plain-asp-net-core-web-api

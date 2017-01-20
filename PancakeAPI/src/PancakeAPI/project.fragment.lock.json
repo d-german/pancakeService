@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "PancakeModel/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5",
+      "compile": {
+        "bin/Debug/PancakeModel.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/PancakeModel.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/PancakeModel.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
