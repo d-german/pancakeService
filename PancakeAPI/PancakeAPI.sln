@@ -1,16 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ACCAE8CF-6931-4C8F-AF88-0D284FA815AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB13431B-6C8F-4D1C-BD1C-FD294AB5EC08}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PancakeAPI", "src\PancakeAPI\PancakeAPI.xproj", "{D5AB839E-3B4D-4A1E-A9FA-E0749050D9D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PancakeAPI", "src\PancakeAPI\PancakeAPI.csproj", "{D5AB839E-3B4D-4A1E-A9FA-E0749050D9D3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PancakeModel", "..\PancakeModel\PancakeModel.csproj", "{1F224864-F032-4945-89C5-5025C1D93368}"
 EndProject
@@ -34,5 +31,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D5AB839E-3B4D-4A1E-A9FA-E0749050D9D3} = {ACCAE8CF-6931-4C8F-AF88-0D284FA815AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F3CB27E-E7D8-4A35-98F9-DBB52956DBB9}
 	EndGlobalSection
 EndGlobal

@@ -13,11 +13,10 @@ namespace PancakeAPI.Controllers
     public class PancakeController : Controller
     {
         // GET: api/pancake
-        [HttpGet Produces("application/json", "application/xml")]
-        public ObjectResult Get(int numPancakes = 6)
+        public JsonResult Get(int numPancakes = 6)
         {
             var res = new ButtermilkPancakeRecipe(numPancakes);
-            return new ObjectResult(res);
+            return new JsonResult(res);
         }
 
     }
